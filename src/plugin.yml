@@ -1,0 +1,12 @@
+name: BlockLock
+version: '0.1.0'
+author: clehner
+website: http://github.com/clehner/BlockLock
+main: com.celehner.BlockLock.BlockLock
+description: Locks blocks with logblock.
+softdepend: [LogBlock]
+commands:
+permissions:
+    blocklock.buildanywhere:
+        description: 'Allows changing blocks in places changed by other players.'
+        default: op
