@@ -61,11 +61,11 @@ class BLBlockListener extends BlockListener
 		if (name.equals(player.getName())) return true;
 
 		// allow overriding natural block changes
-		if (name.equals("Creeper")
-			|| name.equals("Enderman")
-			|| name.equals("LavaFlow")
-			|| name.equals("WaterFlow")
-		) return true;
+		if (name.equals("LavaFlow") || name.equals("WaterFlow")) {
+			// || name.equals("Creeper")
+			// || name.equals("Enderman")
+			return true;
+		}
 
 		player.sendMessage(ChatColor.RED +
 			"You do not have permission to build there.");
